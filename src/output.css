@@ -597,16 +597,16 @@ html {
   margin-right: auto;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mb-3 {
   margin-bottom: 0.75rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
+.mb-36 {
+  margin-bottom: 9rem;
 }
 
 .mb-8 {
@@ -617,44 +617,36 @@ html {
   margin-bottom: 0.5rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mb-36 {
-  margin-bottom: 9rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
   display: flex;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-72 {
-  height: 18rem;
-}
-
 .h-96 {
   height: 24rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .min-h-screen {
   min-height: 100vh;
 }
 
-.flex-auto {
-  flex: 1 1 auto;
+.w-full {
+  width: 100%;
 }
 
-.basis-1\/3 {
-  flex-basis: 33.333333%;
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .basis-80 {
@@ -663,6 +655,18 @@ html {
 
 .basis-96 {
   flex-basis: 24rem;
+}
+
+.basis-1\/2 {
+  flex-basis: 50%;
+}
+
+.basis-1\/3 {
+  flex-basis: 33.333333%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-col {
@@ -677,12 +681,20 @@ html {
   align-content: flex-end;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -693,6 +705,10 @@ html {
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -701,12 +717,20 @@ html {
   gap: 1.5rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-24 {
+  gap: 6rem;
 }
 
 .gap-y-3 {
   row-gap: 0.75rem;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .rounded-3xl {
@@ -719,11 +743,6 @@ html {
 
 .border {
   border-width: 1px;
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -764,6 +783,26 @@ html {
   background-image: url(./assets/images/product-6.jpg);
 }
 
+.bg-\[url\(\.\/assets\/images\/wedding\.png\)\] {
+  background-image: url(./assets/images/wedding.png);
+}
+
+.bg-\[url\(\.\/assets\/images\/man\.jpg\)\] {
+  background-image: url(./assets/images/man.jpg);
+}
+
+.bg-\[url\(\.\/assets\/images\/kids\.jpg\)\] {
+  background-image: url(./assets/images/kids.jpg);
+}
+
+.bg-\[url\(\.\/assets\/images\/women\.jpg\)\] {
+  background-image: url(./assets/images/women.jpg);
+}
+
+.bg-\[url\(\.\/assets\/images\/woman\.jpg\)\] {
+  background-image: url(./assets/images/woman.jpg);
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -772,21 +811,12 @@ html {
   background-position: center;
 }
 
-.bg-bottom {
-  background-position: bottom;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .px-6 {
@@ -799,22 +829,42 @@ html {
   padding-bottom: 0.5rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-4xl {
@@ -827,9 +877,24 @@ html {
   line-height: 1;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-black {
@@ -840,9 +905,12 @@ html {
   font-weight: 500;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-black {
@@ -853,4 +921,9 @@ html {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
