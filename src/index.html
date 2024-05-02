@@ -24,15 +24,24 @@
 
     <div class="container mx-auto">
       <!-- header -->
-      <header class="flex items-center justify-between py-4">
-        <nav class="flex gap-4">
+      <header
+        class="relative flex items-center justify-between px-6 py-4 sm:px-0"
+      >
+        <nav class="hidden gap-4 sm:flex">
           <a href="#">Men</a>
           <a href="#">Women</a>
           <a href="#">Kids</a>
           <a href="#">Presents</a>
         </nav>
+
         <a href="./index.html" class="text-4xl font-black">Diane</a>
-        <ul class="flex gap-6 text-xl">
+
+        <button class="px-4 py-2 sm:hidden" id="mobile-menu-toggler">
+          <i class="fa-solid fa-bars fa-xl"></i>
+          <i class="fa-solid fa-xmark fa-xl hidden"></i>
+        </button>
+
+        <ul class="hidden gap-6 text-xl sm:flex">
           <li>
             <i class="fa-solid fa-magnifying-glass"></i>
           </li>
@@ -43,13 +52,28 @@
             <i class="fa-solid fa-arrow-right-to-bracket"></i>
           </li>
         </ul>
+
+        <!-- navigation mobile -->
+        <nav
+          class="absolute left-0 top-16 hidden w-full border-b bg-white py-2 *:my-2 *:px-6 *:py-2"
+          id="mobile-menu"
+        >
+          <a class="block border-l-4 border-black bg-gray-100" href="#">Home</a>
+          <a class="block" href="#">Men</a>
+          <a class="block" href="#">Women</a>
+          <a class="block" href="#">Kids</a>
+          <a class="block" href="#">Presents</a>
+          <a class="block" href="#">Search</a>
+          <a class="block" href="#">Cart</a>
+          <a class="block" href="#">Account</a>
+        </nav>
       </header>
 
       <!-- hero -->
       <section
-        class="mb-36 flex h-96 flex-wrap content-end items-end rounded-3xl bg-[url(./assets/images/hero.jpg)] bg-cover bg-center p-6 text-white"
+        class="mb-36 flex h-96 flex-col flex-wrap items-end justify-end gap-y-3 bg-[url(./assets/images/hero.jpg)] bg-cover bg-center p-6 text-white sm:flex-row sm:content-end sm:justify-start sm:gap-y-0 sm:rounded-3xl"
       >
-        <div class="flex flex-auto flex-col gap-y-3">
+        <div class="flex flex-col gap-y-3 sm:flex-auto">
           <h1 class="text-5xl font-medium">DIANE NATURE COLLECTION</h1>
           <p class="">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
@@ -72,8 +96,10 @@
           distinctio illo explicabo.
         </p>
 
-        <div class="mb-12 flex flex-wrap justify-center gap-4 text-left">
-          <article class="flex basis-96 flex-col gap-2">
+        <div
+          class="mb-12 grid grid-cols-1 grid-rows-2 justify-center gap-4 px-6 text-left md:grid-cols-[repeat(3,_minmax(0,_348px))] md:px-0"
+        >
+          <article class="flex flex-col gap-2">
             <div
               class="basis-80 rounded-3xl bg-[url(./assets/images/product-1.jpg)] bg-cover"
             ></div>
@@ -85,7 +111,7 @@
             <strong>$45</strong>
           </article>
 
-          <article class="flex basis-96 flex-col gap-2">
+          <article class="flex flex-col gap-2">
             <div
               class="basis-80 rounded-3xl bg-[url(./assets/images/product-2.jpg)] bg-cover bg-center"
             ></div>
@@ -97,7 +123,7 @@
             <strong>$45</strong>
           </article>
 
-          <article class="flex basis-96 flex-col gap-2">
+          <article class="flex flex-col gap-2">
             <div
               class="basis-80 rounded-3xl bg-[url(./assets/images/product-3.jpg)] bg-cover bg-center"
             ></div>
@@ -108,10 +134,8 @@
             </p>
             <strong>$45</strong>
           </article>
-        </div>
 
-        <div class="flex flex-wrap justify-center gap-4 text-left">
-          <article class="flex basis-96 flex-col gap-2">
+          <article class="flex flex-col gap-2">
             <div
               class="basis-80 rounded-3xl bg-[url(./assets/images/product-4.jpg)] bg-cover bg-center"
             ></div>
@@ -123,7 +147,7 @@
             <strong>$45</strong>
           </article>
 
-          <article class="flex basis-96 flex-col gap-2">
+          <article class="flex flex-col gap-2">
             <div
               class="basis-80 rounded-3xl bg-[url(./assets/images/product-5.jpg)] bg-cover bg-center"
             ></div>
@@ -135,7 +159,7 @@
             <strong>$45</strong>
           </article>
 
-          <article class="flex basis-96 flex-col gap-2">
+          <article class="flex flex-col gap-2">
             <div
               class="basis-80 rounded-3xl bg-[url(./assets/images/product-6.jpg)] bg-cover"
             ></div>
@@ -149,7 +173,8 @@
         </div>
       </section>
 
-      <section class="mb-36 flex flex-col items-center gap-4">
+      <!-- wedding section -->
+      <section class="mb-36 flex flex-col items-center gap-4 px-6 sm:px-0">
         <div
           class="h-80 w-full rounded-3xl bg-[url(./assets/images/wedding.png)] bg-cover bg-center"
         ></div>
@@ -165,7 +190,10 @@
         </button>
       </section>
 
-      <section class="mb-36 flex justify-center gap-4 text-white">
+      <!-- category section -->
+      <section
+        class="mb-36 flex flex-col justify-center gap-4 px-6 text-white sm:flex-row sm:px-0"
+      >
         <article
           class="flex h-96 basis-80 flex-col items-start justify-end gap-2 rounded-3xl bg-[url(./assets/images/man.jpg)] bg-cover bg-center p-6"
         >
@@ -200,14 +228,16 @@
         </article>
       </section>
 
-      <footer class="flex gap-24 pb-8">
+      <footer
+        class="flex flex-col gap-24 gap-y-12 px-6 pb-8 sm:flex-row sm:px-0"
+      >
         <div class="flex basis-1/2 flex-col gap-4">
           <h2 class="text-4xl font-bold">Diane</h2>
           <p class="mb-8 text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
             perspiciatis error quas reprehenderit quasi.
           </p>
-          <div class="flex gap-4">
+          <div class="flex flex-col gap-4 sm:flex-row">
             <input
               type="email"
               placeholder="votre email"
@@ -253,7 +283,9 @@
       </footer>
     </div>
 
-    <div class="flex justify-between bg-black px-4 py-2 text-white">
+    <div
+      class="flex flex-col justify-between gap-y-2 bg-black px-4 py-2 text-white sm:flex-row"
+    >
       <p class="">Copyright &copy; Diane 2024</p>
       <ul class="flex gap-4">
         <li class="cursor-pointer">Terms & conditions</li>
@@ -261,5 +293,7 @@
         <li class="cursor-pointer">We are hiring</li>
       </ul>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
